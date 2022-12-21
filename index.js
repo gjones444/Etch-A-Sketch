@@ -1,7 +1,8 @@
 // Get size submitted by the usr, call makeGrid()
 
 function makeGrid() {
-  var clear = document.getElementById("gridCanvas");
+
+  let clear = document.getElementById("gridCanvas");
   clear.innerHTML = "";
 
   let height = document.getElementById("gridHeight").value;
@@ -22,3 +23,30 @@ function makeGrid() {
     }
   }
 }
+
+// // You can add an event listener if you want to get the color when the selection changes. You’d do something like this:
+function changeColor() {
+  var theInput = document.getElementById("colorPicker");
+  var theColor = theInput.value
+  document.getElementById("colorPicker").value = changeColor;
+  document.body.style.color = theColor;
+
+  // theInput.addEventListener(
+  //   "input",
+  //   function () {
+  //     var theColor = theInput.value;
+  //     // Do something with `theColor` here.
+  //     document.getElementById("colorPicker").style.color = "red";
+  //     console.log(theColor)
+  //   },
+  //   false
+  // );
+}
+
+  // function changeColor() {
+  //   let x = document.getElementById("colorPicker").value;
+  //   document.getElementById("colorPicker").value = changeColor;
+  //   document.body.style.color = x;
+  //   console.log(x);
+  //   return false;
+  // }

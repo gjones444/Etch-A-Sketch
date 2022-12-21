@@ -1,3 +1,7 @@
 table, th, td {
     border: 20px solid;
   }
+
+  tr:nth-child(even) {
+    background-color: #ececec;
+  }
